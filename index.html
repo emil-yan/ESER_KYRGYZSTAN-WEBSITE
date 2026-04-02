@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+    <script>
+        tailwind.config = {
+          theme: {
+            extend: {
+              fontFamily: {
+                kyrgyz: ['kyrgyz', 'serif'],
+                commons_light: ['tt_commons_light', 'sans-serif'],
+                commons_medium: ['tt_commons_medium', 'sans-serif'],
+                commons_regular: ['tt_commons_regular', 'sans-serif'],
+              },
+            },
+          },
+        }
+    </script>
+
+    <link rel="stylesheet" href="https://unpkg.com">
+    <link rel="stylesheet" href="./css/fonts.css">
+    <link rel="stylesheet" href="./css/styling.css">
+    <script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js"></script>
+    <script src="scripts/script.js"></script>
+
+    <title>Kyrgyzstan Virtual Exploration</title>
+
+</head>
+
+<body>
+
+    <nav id="main-nav" class="fixed top-0 left-0 w-full h-[104px] z-50 flex items-center justify-between px-10 transition-all duration-500 ease-in-out">
+        
+        <div class="flex items-center space-x-4">
+
+            <div class="text-3xl text-stone-100 ml-12">
+                
+                <a href="">
+                    Kyrgyzstan
+                </a>
+
+            </div>
+        </div>
+
+        <div class="flex space-x-12 text-[15px] text-stone-100 uppercase">
+            <a href="#Home-section" class="tracking-[0.4em]">Home</a>
+            <a href="#Geography-section" class="tracking-[0.4em]">Geography</a>
+            <a href="#Culture-section" class="tracking-[0.4em]">Culture</a>
+            <a href="#About-section" class="tracking-[0.4em]">About</a>
+        </div>
+    </nav>
+
+    <!-- h-dvh w-full - dynamic container height for taskbar and-->
+    <section id="Home-section" class="relative min-h-dvh w-full flex justify-start items-end pb-6 scroll-mt-[104px] bg-[url('./images/K_image_2.jpg')] bg-cover bg-bottom z-0">
+
+        <div class="absolute inset-0 bg-black/25 z-0"></div>
+
+        <div class="ml-12 text-center text-stone-300 z-10">
+            <div class="font-commons_medium">
+
+                <h1 class="text-1xl">
+                    SCROLL DOWN
+                </h1>
+                <h5 class="text-1xl -mt-2">
+                    Листать вниз
+                </h5>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    <!-- Geography Section -->
+    <section id="Geography-section" class="min-h-dvh bg-stone-100 flex flex-col items-center justify-center space-y-40 py-40">
+    
+        <!-- Picture 1 Block -->
+        <div class="reveal-container w-full max-w-7xl flex flex-col items-start">
+            <!-- Masked Title -->
+            <div class="overflow-hidden mb-6">
+                <h2 class="reveal-text font-commons_medium text-4xl uppercase tracking-tighter opacity-0 translate-y-full transition-all duration-700 ease-out">
+                    Lake Issyk Kul
+                </h2>
+            </div>
+            <!-- Parallax Window -->
+            <div class="relative w-full h-[500px] overflow-hidden rounded-sm shadow-2xl">
+                <img src="images/issykkul.jpg" class="parallax-target absolute top-[-20%] left-0 w-full h-[140%] object-cover scale-110" data-speed="0.15">
+            </div>
+        </div>
+    
+        <!-- Picture 2 Block -->
+        <div class="reveal-container w-full max-w-7xl flex flex-col items-start">
+            <div class="overflow-hidden mb-6">
+                <h2 class="reveal-text font-commons_medium text-4xl uppercase tracking-tighter opacity-0 translate-y-full transition-all duration-700 ease-out">
+                    Jengish Chokusu
+                </h2>
+            </div>
+            <div class="relative w-full h-[500px] overflow-hidden rounded-sm shadow-2xl">
+                <img src="images/Jengish_Chokusu.jpg" class="parallax-target absolute top-[-20%] left-0 w-full h-[140%] object-cover scale-110" data-speed="0.15">
+            </div>
+        </div>
+
+        <!-- Picture 3 Block -->
+        <div class="reveal-container w-full max-w-7xl flex flex-col items-start">
+            <div class="overflow-hidden mb-6">
+                <h2 class="reveal-text font-commons_medium text-4xl uppercase tracking-tighter opacity-0 translate-y-full transition-all duration-700 ease-out">
+                    Fergana Range
+                </h2>
+            </div>
+            <div class="relative w-full h-[500px] overflow-hidden rounded-sm shadow-2xl">
+                <img src="images/fergana range.jpg" class="parallax-target absolute top-[-20%] left-0 w-full h-[140%] object-cover scale-110" data-speed="0.15">
+            </div>
+        </div>
+    
+        <!-- Picture 4 Block -->
+        <div class="reveal-container w-full max-w-7xl flex flex-col items-start">
+            <div class="overflow-hidden mb-6">
+                <h2 class="reveal-text font-commons_medium text-4xl uppercase tracking-tighter opacity-0 translate-y-full transition-all duration-700 ease-out">
+                    Pamir Range
+                </h2>
+            </div>
+            <div class="relative w-full h-[500px] overflow-hidden rounded-sm shadow-2xl">
+                <img src="images/pamir_range.jpg" class="parallax-target absolute top-[-20%] left-0 w-full h-[140%] object-cover scale-110" data-speed="0.15">
+            </div>
+        </div>
+
+        <!-- Picture 5 Block -->
+        <div class="reveal-container w-full max-w-7xl flex flex-col items-start">
+            <div class="overflow-hidden mb-6">
+                <h2 class="reveal-text font-commons_medium text-4xl uppercase tracking-tighter opacity-0 translate-y-full transition-all duration-700 ease-out">
+                    Tian Shan Range
+                </h2>
+            </div>
+            <div class="relative w-full h-[500px] overflow-hidden rounded-sm shadow-2xl">
+                <img src="images/tian_shan.jpg" class="parallax-target absolute top-[-20%] left-0 w-full h-[140%] object-cover scale-110" data-speed="0.15">
+            </div>
+        </div>
+
+        <!-- Picture 6 Block -->
+        <div class="reveal-container w-full max-w-7xl flex flex-col items-start">
+            <div class="overflow-hidden mb-6">
+                <h2 class="reveal-text font-commons_medium text-4xl uppercase tracking-tighter opacity-0 translate-y-full transition-all duration-700 ease-out">
+                    Bishkek
+                </h2>
+            </div>
+            <div class="relative w-full h-[500px] overflow-hidden rounded-sm shadow-2xl">
+                <img src="images/Bishkek.jpg" class="parallax-target absolute top-[-20%] left-0 w-full h-[140%] object-cover scale-110" data-speed="0.15">
+            </div>
+        </div>
+    
+    </section>
+
+    <section id="Culture-section" class="min-h-dvh bg-stone-900 flex flex-col items-center justify-center py-10 px-10 scroll-mt-[104px] overflow-hidden">
+
+        <!-- 1. The Marquee (Moving Left to Right) -->
+        <div class="w-full mb-16 select-none pointer-events-none">
+            <div class="flex whitespace-nowrap animate-marquee">
+                <span class="font-commons_medium text-[12vw] text-red-700 uppercase mx-8">русский.</span>
+                <span class="font-kyrgyz text-[12vw] text-white uppercase mx-8">Кыргыз.</span>
+                <!-- Repeat for seamless loop -->
+                <span class="font-commons_medium text-[12vw] text-red-700 uppercase mx-8">русский.</span>
+                <span class="font-kyrgyz text-[12vw] text-white uppercase mx-8">Кыргыз.</span>
+            </div>
+        </div>
+    
+        <!-- 2. The Centered Description -->
+        <div class="reveal-container max-w-3xl text-center space-y-6">
+            <div class="overflow-hidden">
+                <p class="reveal-text font-commons_regular text-stone-300 text-lg md:text-xl leading-relaxed opacity-0 translate-y-10 transition-all duration-1000 ease-out">
+                    Kyrgyz and Russian are the two official languages of Kyrgyzstan, the latter being the language of interethnic communication; around three fourths of the population speaks Kyrgyz and 9 percent speak Russian.
+                     Uzbek is spoken by about 15 percent of the population based of 2009 estimates. Kyrgyz is a Turkic language. During the Soviet era, it lost many native speakers. Since independence, there has been a concerted effort among ethnic Kyrgyz to reestablish their language. It is written in the Cyrillic alphabet, a result of Soviet Russian domination.
+                </p>
+            </div>
+            
+            <!-- Optional: A decorative line -->
+            <div class="reveal-text h-[1px] w-24 bg-red-600 mx-auto opacity-0 scale-x-0 transition-all duration-1000 delay-300"></div>
+        </div>
+
+        <div class="w-full mb-16 select-none pointer-events-none mt-10">
+            <div class="flex whitespace-nowrap animate-marquee">
+                <span class="font-kyrgyz text-[12vw] text-white uppercase mx-8">Кыргыз.</span>
+                <span class="font-commons_medium text-[12vw] text-red-700 uppercase mx-8">русский.</span>
+                <!-- Repeat for seamless loop -->
+                <span class="font-kyrgyz text-[12vw] text-white uppercase mx-8">Кыргыз.</span>
+                <span class="font-commons_medium text-[12vw] text-red-700 uppercase mx-8">русский.</span>
+            </div>
+        </div>
+
+        <div class="reveal-container w-full max-w-7xl grid grid-cols-1 md:grid-cols-2 gap-20 items-center py-60">
+            
+            <!-- Left Column: Information (Unchanged) -->
+            <div class="space-y-10 order-2 md:order-1">
+                <div class="overflow-hidden">
+                    <h3 class="reveal-text font-commons_medium text-red-600 uppercase tracking-[0.4em] text-sm opacity-0 translate-y-full transition-all duration-700">
+                        National Symbolism
+                    </h3>
+                </div>
+                
+                <div class="overflow-hidden">
+                    <h2 class="reveal-text font-commons_medium text-5xl text-white leading-tight opacity-0 translate-y-full transition-all duration-1000 delay-100">
+                        The Sun of <br> Forty Tribes.
+                    </h2>
+                </div>
+        
+                <p class="reveal-text font-commons_regular text-stone-400 text-lg leading-relaxed opacity-0 translate-y-10 transition-all duration-1000 delay-200">
+                    The State Flag of the Kyrgyz Republic consists of a red field charged with a yellow sun that contains a depiction of a tündük, the opening in the center of the roof of a yurt.
+                    Adopted in 1992 and updated in 2023, features a red field representing bravery, a fourty ray yellow sun symbolizing peace and prosperity, and a central tunduk yurt roof representing home and unity. The fourty rays denote the tribes united by the hero Manas, creating a symbol of national identity.
+                </p>
+        
+                <!-- Decorative Animated Line -->
+                <div class="reveal-text h-[1px] w-32 bg-red-600 opacity-0 scale-x-0 transition-all duration-1000 delay-300 origin-left"></div>
+            </div>
+        
+            <!-- Right Column: Vertical Parallax Flag -->
+            <div class="w-full flex justify-center md:justify-end">
+                <!-- Tall vertical frame with the official red background -->
+                <div class="relative w-full max-w-[520px] h-[800px] overflow-hidden rounded-sm shadow-2xl bg-[#EE1D23]">
+                    <img src="images/Kyrgyzstan_flag_tunduk.svg.png" 
+                         alt="Kyrgyzstan Flag" 
+                         class="parallax-target absolute top-[-50%] left-0 w-full h-[200%] object-contain p-24 scale-110"
+                         data-speed="0.8">
+                </div>
+            </div>
+        </div>
+    
+
+    
+    </section>
+
+    <section id="About-section" class="min-h-dvh bg-stone-200 flex flex-col items-center justify-center py-32 px-10 scroll-mt-[104px] overflow-hidden">
+    
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-20 max-w-6xl w-full">
+            
+            <!-- Column 1: The Creator -->
+            <div class="reveal-container space-y-8">
+                <div class="overflow-hidden">
+                    <h3 class="reveal-text font-commons_medium text-stone-500 text-sm uppercase tracking-[0.3em] opacity-0 translate-y-full transition-all duration-700">
+                        Lucky Eser
+                    </h3>
+                </div>
+                <div class="overflow-hidden">
+                    <h2 class="reveal-text font-commons_medium text-5xl text-stone-900 leading-tight opacity-0 translate-y-full transition-all duration-1000 delay-100">
+                        Crafting digital <br> landscapes.
+                    </h2>
+                </div>
+                <p class="reveal-text font-commons_regular text-stone-600 text-lg opacity-0 translate-y-10 transition-all duration-1000 delay-200">
+                    Hi, I am the creator behind this exploration. My goal was to blend modern web technologies like Lenis, Flexbox, and Tailwind with the raw beauty of Kyrgyzstan to create a truly immersive digital journey.
+                </p>
+            </div>
+    
+            <!-- Column 2: The Project -->
+            <div class="reveal-container space-y-8 md:mt-32">
+                <div class="overflow-hidden">
+                    <h3 class="reveal-text font-commons_medium text-stone-500 text-sm uppercase tracking-[0.3em] opacity-0 translate-y-full transition-all duration-700">
+                        The Mission
+                    </h3>
+                </div>
+                <div class="overflow-hidden">
+                    <h2 class="reveal-text font-commons_medium text-5xl text-stone-900 leading-tight opacity-0 translate-y-full transition-all duration-1000 delay-100">
+                        Kyrgyzstan <br> Unveiled.
+                    </h2>
+                </div>
+                <p class="reveal-text font-commons_regular text-stone-600 text-lg opacity-0 translate-y-10 transition-all duration-1000 delay-200">
+                    This project is a tribute to the Land of Celestial Mountains. It is designed as a non linear experience through the geography and culture of Central Asia, using motion to mirror the fluid nature of discovery.
+                </p>
+                
+                <!-- Final CTA -->
+                <div class="reveal-text pt-4 opacity-0 transition-all duration-1000 delay-500">
+                    <a href="https://github.com/emil-yan" target="_blank" class="inline-block border-b border-stone-900 pb-1 font-commons_medium uppercase text-sm tracking-widest hover:text-red-600 hover:border-red-600 transition-colors">
+                        View Github Profile
+                    </a>
+                </div>
+            </div>
+    
+        </div>
+    
+    </section>
+
+    <button id="back-to-home" 
+    class="fixed bottom-10 right-10 opacity-0 translate-y-10 transition-all duration-500 z-50 pr-3 pl-3 pb-1 flex items-center justify-center pointer-events-none mix-blend-exclusion group border border-white/20">
+    
+    <!-- This white background will invert to black on light sections -->
+    <div class="absolute inset-0 bg-white/10 group-hover:bg-white/40 transition-colors"></div>
+    
+    <!-- The Arrow -->
+    <span class="relative text-2xl text-white font-bold leading-none select-none">
+        ↑
+    </span>
+    </button>
+</body>
+
+</html>

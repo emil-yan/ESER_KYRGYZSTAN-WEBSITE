@@ -1,0 +1,34 @@
+    /* css/fonts.css */
+
+    /* Kyrgyz Font */
+    @font-face {
+        font-family: 'kyrgyz';
+        src: url('../fonts/Bluu Next Cyrillic.ttf') format('truetype');
+        font-weight: normal;
+        font-style: normal;
+    }
+  
+    /* TT Commons Font Light*/
+    @font-face {
+        font-family: 'tt_commons_light';
+        src: url('../fonts/Fontspring-DEMO-tt_commons_pro_light.otf') format('opentype');
+        font-weight: 500;
+        font-style: normal;
+    }
+
+    /* TT Commons Font  Medium*/
+    @font-face {
+        font-family: 'tt_commons_medium';
+        src: url('../fonts/Fontspring-DEMO-tt_commons_pro_medium.otf') format('opentype');
+        font-weight: 500;
+        font-style: normal;
+    }
+
+    /* TT Commons Font  regular*/
+    @font-face {
+        font-family: 'tt_commons_regular';
+        src: url('../fonts/Fontspring-DEMO-tt_commons_pro_regular.otf') format('opentype');
+        font-weight: 500;
+        font-style: normal;
+    }
+  

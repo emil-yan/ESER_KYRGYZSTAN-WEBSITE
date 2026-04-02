@@ -1,0 +1,97 @@
+
+
+/* Essential CSS for smooth scrolling libraries */
+html.lenis, html.lenis body { 
+    height: auto; 
+}
+    .lenis.lenis-smooth { scroll-behavior: auto !important; }
+    .lenis.lenis-smooth [data-lenis-prevent] { overscroll-behavior: contain; 
+}
+
+html {
+    scroll-behavior: auto !important;
+    /* Adjust this value based on your navbar's actual height */
+    scroll-padding-top: 104px; 
+}
+
+body::-webkit-scrollbar {
+    display: none;
+}
+
+nav {
+    font-family: 'kyrgyz';
+}
+
+.parallax-target {
+    will-change: transform;
+    transition: transform 0.1s linear; /* Makes the movement liquid-smooth */
+}
+
+.reveal-text {
+    /* Cubic-bezier makes the "slide-up" look more premium */
+    transition-timing-function: cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+html.lenis, html.lenis body {
+    height: auto;
+}
+
+.lenis.lenis-smooth {
+    scroll-behavior: auto !important;
+}
+
+.lenis.lenis-smooth [data-lenis-prevent] {
+    overscroll-behavior: contain;
+}
+
+.lenis.lenis-stopped {
+    overflow: hidden;
+}
+
+.lenis.lenis-scrolling iframe {
+    pointer-events: none;
+}
+
+/* Continuous Marquee Animation */
+@keyframes marquee {
+    0% { transform: translateX(-50%); }
+    100% { transform: translateX(0%); }
+}
+
+.animate-marquee {
+    display: flex;
+    width: fit-content;
+    animation: marquee 20s linear infinite;
+}
+
+.reveal-text.scale-x-0 {
+    transform: scaleX(0);
+    transition: transform 1.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal-text.scale-x-100 {
+    transform: scaleX(1);
+}
+
+/* Premium Reveal Tuning */
+.reveal-text {
+    transition-timing-function: cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+/* about section */
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-15px); }
+    100% { transform: translateY(0px); }
+}
+
+.reveal-container {
+    /* Once revealed, add a very subtle float to the whole container */
+    animation: float 6s ease-in-out infinite;
+}
+
+.parallax-target {
+    will-change: transform;
+    /* Use translate3d in your JS for smoother 60fps performance */
+    transition: transform 0.1s linear;
+}
